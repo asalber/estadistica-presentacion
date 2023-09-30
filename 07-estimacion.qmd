@@ -127,7 +127,7 @@ Por tanto, su distribución de probabilidad también depende de la distribución
 Si se toma la media muestral $\bar X$ de las muestras de tamaño 2 del ejemplo anterior, su distribución de probabilidad es
 
 ::: {.content-visible when-format="html"}
-![](img/estimacion/distribucion_media.svg){fig-alt="Distribución de la media de una muestra de tamaño 2." fig-align="center" width=80%}
+![](img/estimacion/distribucion-media.svg){fig-alt="Distribución de la media de una muestra de tamaño 2." fig-align="center" width=80%}
 :::
 :::
 
@@ -268,7 +268,6 @@ Mientras que el estimador es una función que es única, la estimación no es ú
 
 ::: {.content-visible when-format="html"}
 ![](img/estimacion/estimador-estimacion){fig-alt="Diferencia entre estimador y estimación de un parámetro poblacional." fig-align="center"}
-:::
 :::
 
 ---
@@ -599,7 +598,7 @@ A partir de este estimador se calculan los extremos del intervalo sobre su distr
 Estos valores suelen tomarse de manera simétrica, de manera que el extremo inferior deje una probabilidad acumulada inferior $\alpha/2$ y el extremo superior deje una probabilidad acumulada superior también de $\alpha/2$.
 
 ::: {.content-visible when-format="html"}
-![](img/estimacion/extremos_intervalos){fig-alt="Cálculo de los límites del intervalo." fig-align="center" width=70%}
+![](img/estimacion/extremos-intervalos){fig-alt="Cálculo de los límites del intervalo." fig-align="center" width=70%}
 :::
 
 ## Intervalos  de confianza para una población
