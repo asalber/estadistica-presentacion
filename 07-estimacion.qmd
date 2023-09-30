@@ -328,9 +328,7 @@ En teoría pueden utilizarse distintos estimadores para estimar un mismo paráme
 \hat \theta_3 &= X_1 \cdots
 \end{align*}
 
-\begin{center}
-\color{red}{_¿Cuál es el mejor estimador?}_
-\end{center}
+_¿Cuál es el mejor estimador?_
 
 La respuesta a esta cuestión depende de las propiedades de cada estimador.
 
@@ -360,7 +358,7 @@ $$
 ---
 
 ::: {.content-visible when-format="html"}
-![](img/estimacion/estimadores-sesgados-insesgados){fig-alt="Distribución de la media del número de hijos de dos muestras de tamaños 30 y 100." fig-align="center"}
+![](img/estimacion/estimadores-sesgados-insesgados){fig-alt="Distribución de estimadores sesgados e insesgados." fig-align="center"}
 :::
 
 ##
