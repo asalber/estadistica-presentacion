@@ -1,5 +1,5 @@
 ---
-title: Presentaciones de Análisis Matemático de Variable Real
+title: Presentaciones de Estadística Aplicada
 format: 
     html:
         theme:
@@ -8,7 +8,7 @@ format:
 lang: es
 ---
 
-Presentaciones del [manual de Análisis Matemático de Variable Real](https://aprendeconalf.es/analisis-manual/).
+Presentaciones del [manual de Estadística](https://aprendeconalf.es/estadistica-manual/).
 
 1. [Introducción](01-introduccion.html).
 
