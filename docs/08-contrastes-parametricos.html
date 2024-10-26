@@ -10,7 +10,7 @@
 <link href="08-contrastes-parametricos_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="08-contrastes-parametricos_files/libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="08-contrastes-parametricos_files/libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.5.0">
 
   <meta name="author" content="Alfredo Sánchez Alberca &nbsp;   ">
   <title>Contrastes de hipótesis paramétricos</title>
@@ -160,7 +160,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -341,10 +342,10 @@
 <p>En muchos estudios estadísticos, el objetivo, más que estimar el valor de un parámetro desconocido en la población, es comprobar la veracidad de una hipótesis formulada sobre la población objeto de estudio.</p>
 <p>El investigador, de acuerdo a su experiencia o a estudios previos, suele tener conjeturas sobre la población estudiada que expresa en forma de hipótesis.</p>
 <div id="def-hipotesis-estadistica" class="theorem definition">
-<p><span class="theorem-title"><strong>Definición 1 (Hipótesis estadística) </strong></span>Una <em>hipótesis estadística</em> es cualquier afirmación o conjetura que determina, total o parcialmente, la distribución de una o varias variables de la población.</p>
+<p><span class="theorem-title"><strong>Definición 1 (Hipótesis estadística)</strong></span> Una <em>hipótesis estadística</em> es cualquier afirmación o conjetura que determina, total o parcialmente, la distribución de una o varias variables de la población.</p>
 </div>
-<div id="exm-" class="theorem example">
-<p><span class="theorem-title"><strong>Ejemplo 1 </strong></span>Para contrastar el rendimiento académico de un grupo de alumnos en una determinada asignatura, podríamos platear la hipótesis de si el porcentaje de aprobados es mayor del 50%.</p>
+<div id="exm-hipotesis-estadistica" class="theorem example">
+<p><span class="theorem-title"><strong>Ejemplo 1</strong></span> Para contrastar el rendimiento académico de un grupo de alumnos en una determinada asignatura, podríamos platear la hipótesis de si el porcentaje de aprobados es mayor del 50%.</p>
 </div>
 </section>
 
@@ -443,7 +444,7 @@ H_1: &amp; \mbox{ Culpable}
 <section id="elección-del-tipo-de-contraste" class="slide level3">
 <h3>Elección del tipo de contraste</h3>
 <div id="exm-eleccion-tipo-contraste" class="theorem example">
-<p><span class="theorem-title"><strong>Ejemplo 2 </strong></span>Supóngase que existen sospechas de que en una población hay menos hombres que mujeres.</p>
+<p><span class="theorem-title"><strong>Ejemplo 2</strong></span> Supóngase que existen sospechas de que en una población hay menos hombres que mujeres.</p>
 <p>¿Qué tipo de contraste debería plantearse para validar o refutar esta sospecha?</p>
 <ol type="1">
 <li><p>Las sospechas se refieren al porcentaje o la proporción <span class="math inline">\(p\)</span> de hombres en la población, por lo que se trata de un <em>contraste paramétrico</em>.</p></li>
@@ -470,7 +471,7 @@ H_1: &amp; p&lt;0.5
 <section class="slide level3">
 
 <div id="exm-estadistico-contraste" class="theorem example">
-<p><span class="theorem-title"><strong>Ejemplo 3 </strong></span>Volviendo al ejemplo del contraste sobre la proporción de hombres de una población</p>
+<p><span class="theorem-title"><strong>Ejemplo 3</strong></span> Volviendo al ejemplo del contraste sobre la proporción de hombres de una población</p>
 <p><span class="math display">\[
 \begin{align*}
 H_0: &amp; p=0.5\newline
@@ -499,18 +500,18 @@ H_1: &amp; p&lt;0.5
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="img/contrastes/regiones_bilateral.svg" alt="Regiones de un contraste bilateral" width="700"></p>
+<p><img data-src="img/contrastes/regiones_bilateral.svg" class="quarto-figure quarto-figure-center" alt="Regiones de un contraste bilateral" width="700"></p>
 </figure>
 </div>
 <ul>
-<li><p>Contraste unilateral de menor <span class="math inline">\(H_0:\ \theta=\theta_0\)</span> &amp;H_1:&nbsp;&lt;_0$. <img data-src="./img/contrastes/regiones_unilateral_menor.svg" data-fig-align="center" alt="Regiones de un contraste unilateral de menor" width="700"></p></li>
-<li><p>Contraste unilateral de mayor <span class="math inline">\(H_0:\ \theta=\theta_0\)</span> <span class="math inline">\(H_1:\ \theta&gt;\theta_0\)</span>. <img data-src="./img/contrastes/regiones_unilateral_mayor.svg" data-fig-align="center" alt="Regiones de un contraste unilateral de mayor" width="700"></p></li>
+<li><p>Contraste unilateral de menor <span class="math inline">\(H_0:\ \theta=\theta_0\)</span> &amp;H_1:&nbsp;&lt;_0$. <img data-src="./img/contrastes/regiones_unilateral_menor.svg" class="quarto-figure quarto-figure-center" alt="Regiones de un contraste unilateral de menor" width="700"></p></li>
+<li><p>Contraste unilateral de mayor <span class="math inline">\(H_0:\ \theta=\theta_0\)</span> <span class="math inline">\(H_1:\ \theta&gt;\theta_0\)</span>. <img data-src="./img/contrastes/regiones_unilateral_mayor.svg" class="quarto-figure quarto-figure-center" alt="Regiones de un contraste unilateral de mayor" width="700"></p></li>
 </ul>
 </section>
 <section class="slide level3">
 
 <div id="exm-regiones-aceptacion-rechazo" class="theorem example">
-<p><span class="theorem-title"><strong>Ejemplo 4 </strong></span>Siguiendo con el ejemplo del contraste sobre la proporción de hombres de una población</p>
+<p><span class="theorem-title"><strong>Ejemplo 4</strong></span> Siguiendo con el ejemplo del contraste sobre la proporción de hombres de una población</p>
 <p><span class="math display">\[
 \begin{align*}
 H_0: &amp; p=0.5\newline
@@ -520,7 +521,7 @@ H_1: &amp; p&lt;0.5
 <p>Como el estadístico del contraste tenía una distribución binomial <span class="math inline">\(X\sim B(10,\,0.5)\)</span> suponiendo cierta la hipótesis nula, su recorrido será de 0 a 10 y su valor esperado 5, por lo que, al tratarse de un contraste unilateral de menor, la región de rechazo quedará por debajo del 5. Pero, <em>¿dónde poner el límite entre las regiones de aceptación y de rechazo?</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="./img/contrastes/regiones_contraste_proporcion_hombres.svg" alt="Regiones de un contraste sobre la proporción de hombres en una muestra de tamño 10." width="700"></p>
+<p><img data-src="./img/contrastes/regiones_contraste_proporcion_hombres.svg" class="quarto-figure quarto-figure-center" alt="Regiones de un contraste sobre la proporción de hombres en una muestra de tamño 10." width="700"></p>
 </figure>
 </div>
 </div>
@@ -552,7 +553,7 @@ H_1: &amp; p&lt;0.5
 <h2>Riesgos de los errores de un contraste de hipótesis</h2>
 <p>Los riesgos de cometer cada tipo de error se cuantifican mediante probabilidades:</p>
 <div id="def-riesgos-alfa-beta" class="theorem definition">
-<p><span class="theorem-title"><strong>Definición 2 (Riesgos <span class="math inline">\(\alpha\)</span> y <span class="math inline">\(\beta\)</span>) </strong></span>En un contraste de hipótesis, se define el <em>riesgo</em> <span class="math inline">\(\alpha\)</span> como la máxima probabilidad de cometer un error de tipo I, es decir,</p>
+<p><span class="theorem-title"><strong>Definición 2 (Riesgos <span class="math inline">\(\alpha\)</span> y <span class="math inline">\(\beta\)</span>)</strong></span> En un contraste de hipótesis, se define el <em>riesgo</em> <span class="math inline">\(\alpha\)</span> como la máxima probabilidad de cometer un error de tipo I, es decir,</p>
 <p><span class="math display">\[
 P(\mbox{Rechazar }H_0|H_0) \leq \alpha,
 \]</span></p>
@@ -585,13 +586,13 @@ P(\mbox{Aceptar }H_0|H_1) \leq \beta.
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="./img/contrastes/regiones_bilateral_normal.svg" style="width:100.0%" alt="Regiones de un contraste bilateral en una distribución normal"></p>
+<p><img data-src="./img/contrastes/regiones_bilateral_normal.svg" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Regiones de un contraste bilateral en una distribución normal"></p>
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="./img/contrastes/regiones_unilateral_mayor_normal.svg" style="width:100.0%" alt="Regiones de un contraste unilateral de mayor en una distribución normal"></p>
+<p><img data-src="./img/contrastes/regiones_unilateral_mayor_normal.svg" class="quarto-figure quarto-figure-center" style="width:100.0%" alt="Regiones de un contraste unilateral de mayor en una distribución normal"></p>
 </figure>
 </div>
 </div>
@@ -600,12 +601,12 @@ P(\mbox{Aceptar }H_0|H_1) \leq \beta.
 <section class="slide level3">
 
 <div id="exm-regiones-aceptacion-rechazo" class="theorem example">
-<p><span class="theorem-title"><strong>Ejemplo 5 </strong></span>Siguiendo con el contraste sobre la proporción de hombres de una población, como el estadístico del contraste sigue una distribución binomial <span class="math inline">\(X\sim B(10,0.5)\)</span>, si se decide rechazar la hipótesis nula cuando en la muestra haya 2 o menos hombres, la probabilidad de cometer un error de tipo I será</p>
+<p><span class="theorem-title"><strong>Ejemplo 5</strong></span> Siguiendo con el contraste sobre la proporción de hombres de una población, como el estadístico del contraste sigue una distribución binomial <span class="math inline">\(X\sim B(10,0.5)\)</span>, si se decide rechazar la hipótesis nula cuando en la muestra haya 2 o menos hombres, la probabilidad de cometer un error de tipo I será</p>
 <p><span class="math display">\[P(X\leq 2)= f(0)+f(1)+f(2)= 0.0010 + 0.0098 + 0.0439 = 0.0547.\]</span></p>
 <p>Si riesgo máximo de error de tipo I que se está dispuesto a tolerar es <span class="math inline">\(\alpha=0.05\)</span>, ¿qué valores del estadístico permitirán rechazar la hipótesis nula? <span class="math display">\[P(X\leq 1)= f(0)+f(1) = 0.0010 + 0.0098 = 0.0107.\]</span> Es decir, sólo se podría rechazar la hipótesis nula con 0 o 1 hombres en la muestra.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="./img/contrastes/regiones_contraste_proporcion_hombres_2.svg" alt="Regiones de un contraste sobre la proporción de hombres en una muestra de tamño 10." width="700"></p>
+<p><img data-src="./img/contrastes/regiones_contraste_proporcion_hombres_2.svg" class="quarto-figure quarto-figure-center" alt="Regiones de un contraste sobre la proporción de hombres en una muestra de tamño 10." width="700"></p>
 </figure>
 </div>
 </div>
@@ -622,7 +623,7 @@ P(\mbox{Aceptar }H_0|H_1) \leq \beta.
 <h2>Potencia de un contraste</h2>
 <p>Puesto que el objetivo del investigador suele ser rechazar la hipótesis nula, a menudo, lo más interesante de un contraste es su capacidad para detectar la falsedad de la hipótesis nula cuando realmente hay diferencias mayores que <span class="math inline">\(\delta\)</span> entre el verdadero valor del parámetro y el que establece la hipótesis nula.</p>
 <div id="def-potencia-contraste" class="theorem definition">
-<p><span class="theorem-title"><strong>Definición 3 (Potencia de un contraste) </strong></span>La <em>potencia</em> de un contraste de hipótesis se define como</p>
+<p><span class="theorem-title"><strong>Definición 3 (Potencia de un contraste)</strong></span> La <em>potencia</em> de un contraste de hipótesis se define como</p>
 <p><span class="math display">\[
 \mbox{Potencia} = P(\mbox{Rechazar }H_0|H_1) = 1 - P(\mbox{Aceptar }H_0|H_1) = 1-\beta.
 \]</span></p>
@@ -642,20 +643,22 @@ P(\mbox{Aceptar }H_0|H_1) \leq \beta.
 <p><span class="math display">\[1-\beta = 1-0.9536 = 0.0464,\]</span></p>
 <p>lo que indica que no se trataría de un buen contraste para detectar diferencias de un 10% en el valor del parámetro.</p>
 </section></section>
-<section>
-<section id="relación-del-riesgo-beta-y-el-tamaño-del-efecto-delta" class="title-slide slide level2 center">
-<h2>Relación del riesgo <span class="math inline">\(\beta\)</span> y el tamaño del efecto <span class="math inline">\(\delta\)</span></h2>
+<section id="relación-del-riesgo-beta-y-el-tamaño-del-efecto-delta" class="title-slide slide level2 center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Relación del riesgo <span class="math inline">\(\beta\)</span> y el tamaño del efecto <span class="math inline">\(\delta\)</span></h2>
 <p>El riesgo <span class="math inline">\(\beta\)</span> depende directamente de la mínima diferencia <span class="math inline">\(\delta\)</span> que se desea detectar con respecto al valor del parámetro que establece la hipótesis nula.</p>
 
-<img data-src="./img/contrastes/riesgo_beta_tamaño_efecto_pequeño.svg" style="width:80.0%" alt="Riesgo beta para un tamaño del efecto pequeño." class="r-stretch quarto-figure-center"></section>
-<section class="slide level3">
+<img data-src="./img/contrastes/riesgo_beta_tamaño_efecto_pequeño.svg" class="r-stretch quarto-figure quarto-figure-center" alt="Riesgo beta para un tamaño del efecto pequeño."></section>
 
+<section>
+<section id="relación-del-riesgo-beta-y-el-tamaño-del-efecto-delta-1" class="title-slide slide level2 center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Relación del riesgo <span class="math inline">\(\beta\)</span> y el tamaño del efecto <span class="math inline">\(\delta\)</span></h2>
+<p>El riesgo <span class="math inline">\(\beta\)</span> depende directamente de la mínima diferencia <span class="math inline">\(\delta\)</span> que se desea detectar con respecto al valor del parámetro que establece la hipótesis nula.</p>
 
-<img data-src="./img/contrastes/riesgo_beta_tamaño_efecto_grande.svg" style="width:80.0%" alt="Riesgo beta para un tamaño del efecto grande." class="r-stretch quarto-figure-center"></section>
+<img data-src="./img/contrastes/riesgo_beta_tamaño_efecto_grande.svg" class="r-stretch quarto-figure quarto-figure-center" alt="Riesgo beta para un tamaño del efecto grande."></section>
 <section class="slide level3">
 
 <div id="exm-potencia-contraste" class="theorem example">
-<p><span class="theorem-title"><strong>Ejemplo 6 </strong></span>Si en el contraste sobre la proporción de hombres se desease detectar una diferencia de al menos un 20% con respecto al valor que establece la hipótesis nula, es decir, <span class="math inline">\(\delta=0.2\)</span>, entonces la hipótesis alternativa se fijaría a</p>
+<p><span class="theorem-title"><strong>Ejemplo 6</strong></span> Si en el contraste sobre la proporción de hombres se desease detectar una diferencia de al menos un 20% con respecto al valor que establece la hipótesis nula, es decir, <span class="math inline">\(\delta=0.2\)</span>, entonces la hipótesis alternativa se fijaría a</p>
 <p><span class="math display">\[H_1:\ p=0.5-0.2=0.3,\]</span></p>
 <p>y bajo esta hipótesis el estadístico del contraste seguiría una distribución binomial <span class="math inline">\(X\sim B(10,\,0.3)\)</span>.</p>
 <p>En tal caso, el riesgo <span class="math inline">\(\beta\)</span> para las regiones de aceptación y rechazo fijadas antes sería</p>
@@ -665,20 +668,22 @@ P(\mbox{Aceptar }H_0|H_1) \leq \beta.
 <p>aunque seguiría siendo un contraste poco potente.</p>
 </div>
 </section></section>
-<section>
-<section id="relación-entre-los-riesgos-alpha-y-beta" class="title-slide slide level2 center">
-<h2>Relación entre los riesgos <span class="math inline">\(\alpha\)</span> y <span class="math inline">\(\beta\)</span></h2>
+<section id="relación-entre-los-riesgos-alpha-y-beta" class="title-slide slide level2 center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Relación entre los riesgos <span class="math inline">\(\alpha\)</span> y <span class="math inline">\(\beta\)</span></h2>
 <p>Los riesgos <span class="math inline">\(\alpha\)</span> y <span class="math inline">\(\beta\)</span> están enfrentados, es decir, cuando uno aumenta el otro disminuye y viceversa.</p>
 
-<img data-src="./img/contrastes/relacion_riesgos_alpha_pequeño.svg" style="width:80.0%" alt="Riesgo beta para un tamaño del efecto pequeño." class="r-stretch quarto-figure-center"></section>
-<section class="slide level3">
+<img data-src="./img/contrastes/relacion_riesgos_alpha_pequeño.svg" class="r-stretch quarto-figure quarto-figure-center" alt="Riesgo beta para un tamaño del efecto pequeño."></section>
 
+<section>
+<section id="relación-entre-los-riesgos-alpha-y-beta-1" class="title-slide slide level2 center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Relación entre los riesgos <span class="math inline">\(\alpha\)</span> y <span class="math inline">\(\beta\)</span></h2>
+<p>Los riesgos <span class="math inline">\(\alpha\)</span> y <span class="math inline">\(\beta\)</span> están enfrentados, es decir, cuando uno aumenta el otro disminuye y viceversa.</p>
 
-<img data-src="./img/contrastes/relacion_riesgos_alpha_grande.svg" style="width:80.0%" alt="Riesgo beta para un tamaño del efecto grande." class="r-stretch quarto-figure-center"></section>
+<img data-src="./img/contrastes/relacion_riesgos_alpha_grande.svg" class="r-stretch quarto-figure quarto-figure-center" alt="Riesgo beta para un tamaño del efecto grande."></section>
 <section class="slide level3">
 
 <div id="exm-relacion-riesgos-alfa-beta" class="theorem example">
-<p><span class="theorem-title"><strong>Ejemplo 7 </strong></span>Si en el contraste sobre la proporción de hombres toma como riesgo <span class="math inline">\(\alpha=0.1,\)</span> entonces la región de rechazo sería <span class="math inline">\(X\leq 2\)</span> ya que, suponiendo cierta la hipótesis nula, <span class="math inline">\(X\sim B(10,\, 0.5)\)</span>, y</p>
+<p><span class="theorem-title"><strong>Ejemplo 7</strong></span> Si en el contraste sobre la proporción de hombres toma como riesgo <span class="math inline">\(\alpha=0.1,\)</span> entonces la región de rechazo sería <span class="math inline">\(X\leq 2\)</span> ya que, suponiendo cierta la hipótesis nula, <span class="math inline">\(X\sim B(10,\, 0.5)\)</span>, y</p>
 <p><span class="math display">\[P(X\leq 2) = 0.0547 \leq 0.1=\alpha.\]</span></p>
 <p>Entonces, para una diferencia mínima <span class="math inline">\(\delta=0.1\)</span> y suponiendo cierta la hipótesis alternativa, <span class="math inline">\(X\sim B(10,\,0.4)\)</span>, el riesgo <span class="math inline">\(\beta\)</span> será</p>
 <p><span class="math display">\[\beta = P(\mbox{Aceptar }H_0|H_1) = P(X\geq 3) = 1- P(X&lt;3) = 1-0.1673 = 0.8327,\]</span></p>
@@ -686,20 +691,22 @@ P(\mbox{Aceptar }H_0|H_1) \leq \beta.
 <p><span class="math display">\[1-\beta = 1-0.8327 = 0.1673.\]</span></p>
 </div>
 </section></section>
-<section>
-<section id="relación-de-los-riesgos-de-error-y-el-tamaño-muestral" class="title-slide slide level2 center">
-<h2>Relación de los riesgos de error y el tamaño muestral</h2>
+<section id="relación-de-los-riesgos-de-error-y-el-tamaño-muestral" class="title-slide slide level2 center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Relación de los riesgos de error y el tamaño muestral</h2>
 <p>Los riesgos de error también dependen el tamaño de la muestra, ya que al aumentar el tamaño de la muestra, la dispersión del estadístico del contraste disminuye y con ello también lo hacen los riesgos de error.</p>
 
-<img data-src="./img/contrastes/relacion_riesgos_tamaño_muestral_pequeño.svg" style="width:80.0%" alt="Riesgo beta para un tamaño del efecto grande." class="r-stretch quarto-figure-center"></section>
-<section class="slide level3">
+<img data-src="./img/contrastes/relacion_riesgos_tamaño_muestral_pequeño.svg" class="r-stretch quarto-figure quarto-figure-center" alt="Riesgo beta para un tamaño del efecto grande."></section>
 
+<section>
+<section id="relación-de-los-riesgos-de-error-y-el-tamaño-muestral-1" class="title-slide slide level2 center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Relación de los riesgos de error y el tamaño muestral</h2>
+<p>Los riesgos de error también dependen el tamaño de la muestra, ya que al aumentar el tamaño de la muestra, la dispersión del estadístico del contraste disminuye y con ello también lo hacen los riesgos de error.</p>
 
-<img data-src="./img/contrastes/relacion_riesgos_tamaño_muestral_grande.svg" style="width:80.0%" alt="Riesgo beta para un tamaño del efecto grande." class="r-stretch quarto-figure-center"></section>
+<img data-src="./img/contrastes/relacion_riesgos_tamaño_muestral_grande.svg" class="r-stretch quarto-figure quarto-figure-center" alt="Riesgo beta para un tamaño del efecto grande."></section>
 <section class="slide level3">
 
 <div id="exm-relacion-riesgos-tamaño-muestral" class="theorem example">
-<p><span class="theorem-title"><strong>Ejemplo 8 </strong></span>Si para realizar el contraste sobre la proporción de hombres se hubiese tomado una muestra de tamaño 100, en lugar de 10, entonces, bajo la suposición de certeza de la hipótesis nula, el estadístico del contraste seguiría una distribución binomial <span class="math inline">\(B(100,\,0.5)\)</span>, y ahora la región de rechazo sería <span class="math inline">\(X\leq 41\)</span>, ya que</p>
+<p><span class="theorem-title"><strong>Ejemplo 8</strong></span> Si para realizar el contraste sobre la proporción de hombres se hubiese tomado una muestra de tamaño 100, en lugar de 10, entonces, bajo la suposición de certeza de la hipótesis nula, el estadístico del contraste seguiría una distribución binomial <span class="math inline">\(B(100,\,0.5)\)</span>, y ahora la región de rechazo sería <span class="math inline">\(X\leq 41\)</span>, ya que</p>
 <p><span class="math display">\[P(X\leq 41) = 0.0443 \leq 0.05 =\alpha.\]</span></p>
 <p>Entonces, para <span class="math inline">\(\delta=0.1\)</span> y suponiendo cierta la hipótesis alternativa, <span class="math inline">\(X\sim B(100,\,0.4)\)</span>, el riesgo <span class="math inline">\(\beta\)</span> sería</p>
 <p><span class="math display">\[\beta = P(\mbox{Aceptar }H_0|H_1) = P(X\geq 42) = 0.3775,\]</span></p>
@@ -720,10 +727,10 @@ P(\mbox{Aceptar }H_0|H_1) \leq \beta.
 <section class="slide level3">
 
 <div id="exm-curva-potencia" class="theorem example">
-<p><span class="theorem-title"><strong>Ejemplo 9 </strong></span>La curva de potencia correspondiente al contraste sobre la proporción de hombres en la población es la siguiente</p>
+<p><span class="theorem-title"><strong>Ejemplo 9</strong></span> La curva de potencia correspondiente al contraste sobre la proporción de hombres en la población es la siguiente</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="./img/contrastes/potencia.svg" style="width:80.0%" alt="Curva de potencia para muestras de distinto tamaño."></p>
+<p><img data-src="./img/contrastes/potencia.svg" class="quarto-figure quarto-figure-center" style="width:80.0%" alt="Curva de potencia para muestras de distinto tamaño."></p>
 </figure>
 </div>
 </div>
@@ -733,7 +740,7 @@ P(\mbox{Aceptar }H_0|H_1) \leq \beta.
 <p>En general, siempre que la estimación del estadístico caiga dentro de la región de rechazo, rechazaremos la hipótesis nula, pero evidentemente, si dicha estimación se aleja bastante de la región de aceptación tendremos más confianza en el rechazo que si la estimación está cerca del límite entre las regiones de aceptación y rechazo.</p>
 <p>Por este motivo, al realizar un contraste, también se calcula la probabilidad de obtener una discrepancia mayor o igual a la observada entre la estimación del estadístico del contraste y su valor esperado según la hipótesis nula.</p>
 <div id="def-p-valor" class="theorem definition">
-<p><span class="theorem-title"><strong>Definición 4 (<span class="math inline">\(p\)</span>-valor) </strong></span>En un contraste de hipótesis, para cada estimación <span class="math inline">\(x_0\)</span> del estadístico del contraste <span class="math inline">\(X\)</span>, dependiendo del tipo de contraste, se define el <span class="math inline">\(p\)</span>-valor del contraste como</p>
+<p><span class="theorem-title"><strong>Definición 4 (<span class="math inline">\(p\)</span>-valor)</strong></span> En un contraste de hipótesis, para cada estimación <span class="math inline">\(x_0\)</span> del estadístico del contraste <span class="math inline">\(X\)</span>, dependiendo del tipo de contraste, se define el <span class="math inline">\(p\)</span>-valor del contraste como</p>
 <p><span class="math display">\[
 \begin{array}{lc}
 \mbox{Contraste bilateral}: &amp; 2P(X\geq x_0|H_0)\newline
@@ -769,7 +776,7 @@ P(\mbox{Aceptar }H_0|H_1) \leq \beta.
 <section class="slide level3">
 
 <div id="exm-p-valor" class="theorem example">
-<p><span class="theorem-title"><strong>Ejemplo 10 </strong></span>Si el contraste sobre la proporción de hombres se toma una muestra de tamaño 10 y se observa 1 hombre, entonces el <span class="math inline">\(p\)</span>-valor, bajo a supuesta certeza de la hipótesis nula, <span class="math inline">\(X\sim B(10,\, 0.5)\)</span>, será</p>
+<p><span class="theorem-title"><strong>Ejemplo 10</strong></span> Si el contraste sobre la proporción de hombres se toma una muestra de tamaño 10 y se observa 1 hombre, entonces el <span class="math inline">\(p\)</span>-valor, bajo a supuesta certeza de la hipótesis nula, <span class="math inline">\(X\sim B(10,\, 0.5)\)</span>, será</p>
 <p><span class="math display">\[p = P(X\leq 1)= 0.0107,\]</span></p>
 <p>mientras que si en la muestra se observan 0 hombres, entonces el <span class="math inline">\(p\)</span>-valor será</p>
 <p><span class="math display">\[p = P(X\leq 0)= 0.001.\]</span></p>
@@ -856,7 +863,7 @@ H_1 &amp;: \mu\neq \mu_0\end{aligned}
 <section id="section" class="slide level3 scrollable">
 <h3></h3>
 <div id="exm-contraste-media-normal-varianza-desconocida" class="theorem example">
-<p><span class="theorem-title"><strong>Ejemplo 11 </strong></span>En un grupo de alumnos se quiere contrastar si la nota media de estadística es mayor que 5 puntos. Para ello se toma la siguiente muestra:</p>
+<p><span class="theorem-title"><strong>Ejemplo 11</strong></span> En un grupo de alumnos se quiere contrastar si la nota media de estadística es mayor que 5 puntos. Para ello se toma la siguiente muestra:</p>
 <p><span class="math display">\[
 6.3, 5.4, 4.1, 5.0, 8.2, 7.6, 6.4, 5.6, 4.3, 5.2
 \]</span></p>
@@ -865,7 +872,7 @@ H_1 &amp;: \mu\neq \mu_0\end{aligned}
 <p>Para realizar el contraste se tiene:</p>
 <ul>
 <li><span class="math inline">\(\bar x = \frac{6.3+\cdots+5.2}{10}=\frac{58.1}{10}=5.81\)</span> puntos.</li>
-<li><span class="math inline">\(\hat s^2 = \frac{(6.3-5.56)^2+\cdots+(5.2-5.56)^2}{9} = \frac{15.949}{9}=1.7721\)</span> puntos<span class="math inline">\(^2\)</span>, y <span class="math inline">\(\hat s=1.3312\)</span> puntos.</li>
+<li><span class="math inline">\(\hat s^2 = \frac{(6.3-5.81)^2+\cdots+(5.2-5.81)^2}{9} = \frac{15.949}{9}=1.7721\)</span> puntos<span class="math inline">\(^2\)</span>, y <span class="math inline">\(\hat s=1.3312\)</span> puntos.</li>
 </ul>
 <p>Y el estadístico del contraste vale</p>
 <p><span class="math display">\[
@@ -908,7 +915,7 @@ z_\beta = \frac{z_{1-\alpha}\frac{\hat s}{\sqrt n}-\delta}{\frac{\hat s}{\sqrt n
 <section class="slide level3">
 
 <div id="exm-tamaño-muestral-contraste-media" class="theorem example">
-<p><span class="theorem-title"><strong>Ejemplo 12 </strong></span>Se ha visto en el ejemplo anterior que la potencia del contraste para detectar una diferencia en la nota media de 1 punto era del <span class="math inline">\(69.96\%\)</span>. Para aumentar la potencia del test hasta un <span class="math inline">\(90\%\)</span>, ¿cuántos alumnos habría que tomar en la muestra?</p>
+<p><span class="theorem-title"><strong>Ejemplo 12</strong></span> Se ha visto en el ejemplo anterior que la potencia del contraste para detectar una diferencia en la nota media de 1 punto era del <span class="math inline">\(69.96\%\)</span>. Para aumentar la potencia del test hasta un <span class="math inline">\(90\%\)</span>, ¿cuántos alumnos habría que tomar en la muestra?</p>
 <p>Como se desea una potencia <span class="math inline">\(1-\beta=0.9\)</span>, el riesgo <span class="math inline">\(\beta=0.1\)</span> y mirando en la tabla de la normal estándar se puede comprobar que <span class="math inline">\(z_\beta = z_{0.1}=1.2816\)</span>.</p>
 <p>Aplicando la fórmula anterior para determinar el tamaño muestral necesario, se tiene</p>
 <p><span class="math display">\[
@@ -965,7 +972,7 @@ J=\frac{nS^2}{\sigma_0^2} = \frac{(n-1)\hat{S}^2}{\sigma_0^2}\sim \chi^2(n-1),
 <section class="slide level3">
 
 <div id="exm-contraste-varianza" class="theorem example">
-<p><span class="theorem-title"><strong>Ejemplo 13 </strong></span>En un grupo de alumnos se quiere contrastar si la desviación típica de la nota es mayor de 1 punto. Para ello se toma la siguiente muestra:</p>
+<p><span class="theorem-title"><strong>Ejemplo 13</strong></span> En un grupo de alumnos se quiere contrastar si la desviación típica de la nota es mayor de 1 punto. Para ello se toma la siguiente muestra:</p>
 <p><span class="math display">\[
 6.3, 5.4, 4.1, 5.0, 8.2, 7.6, 6.4, 5.6, 4.3, 5.2
 \]</span></p>
@@ -976,7 +983,7 @@ H_0: \sigma=1 \quad H_1: \sigma&gt;1
 <p>Para realizar el contraste se tiene:</p>
 <ul>
 <li><span class="math inline">\(\bar x = \frac{6.3+\cdots+5.2}{10}=\frac{58.1}{10}=5.81\)</span> puntos.</li>
-<li><span class="math inline">\(\hat s^2 = \frac{(6.3-5.56)^2+\cdots+(5.2-5.56)^2}{9} = \frac{15.949}{9}=1.7721\)</span> puntos<span class="math inline">\(^2\)</span>.</li>
+<li><span class="math inline">\(\hat s^2 = \frac{(6.3-5.81)^2+\cdots+(5.2-5.81)^2}{9} = \frac{15.949}{9}=1.7721\)</span> puntos<span class="math inline">\(^2\)</span>.</li>
 </ul>
 <p>El estadístico del contraste vale</p>
 <p><span class="math display">\[
@@ -1007,7 +1014,7 @@ p-p_0}{\sqrt{p_0(1-p_0)/n}}\sim N(0,1).
 <section class="slide level3">
 
 <div id="exm-contraste-proporcion" class="theorem example">
-<p><span class="theorem-title"><strong>Ejemplo 14 </strong></span>En un grupo de alumnos se desea estimar si el porcentaje de aprobados es mayor del <span class="math inline">\(50\%\)</span>. Para ello se toma una muestra de 80 alumnos entre los que hay 50 aprobados.</p>
+<p><span class="theorem-title"><strong>Ejemplo 14</strong></span> En un grupo de alumnos se desea estimar si el porcentaje de aprobados es mayor del <span class="math inline">\(50\%\)</span>. Para ello se toma una muestra de 80 alumnos entre los que hay 50 aprobados.</p>
 <p>El contraste que se plantea es</p>
 <p><span class="math display">\[
 \begin{aligned}
@@ -1088,7 +1095,7 @@ T=\frac{\bar{X}_1-\bar{X}_2}{\hat{S}_p\sqrt{\frac{n_1+n_2}{n_1n_2}}} \sim T(n_1+
 <section id="section-1" class="slide level3 scrollable">
 <h3></h3>
 <div id="exm-contraste-diferencia-medias-normales-varianzas-desconocidas-iguales" class="theorem example">
-<p><span class="theorem-title"><strong>Ejemplo 15 </strong></span>Se quiere comparar el rendimiento académico de dos grupos de alumnos, uno con 10 alumnos y otro con 12, que han seguido metodologías diferentes. Para ello se les realiza un examen y se obtienen las siguientes puntuaciones:</p>
+<p><span class="theorem-title"><strong>Ejemplo 15</strong></span> Se quiere comparar el rendimiento académico de dos grupos de alumnos, uno con 10 alumnos y otro con 12, que han seguido metodologías diferentes. Para ello se les realiza un examen y se obtienen las siguientes puntuaciones:</p>
 <p><span class="math display">\[
 \begin{aligned}
 X_1 &amp;: 4 - 6 - 8 - 7 - 7 - 6 - 5 - 2 - 5 - 3 \newline
@@ -1102,7 +1109,7 @@ H_0: \mu_1=\mu_2\qquad H_1: \mu_1\neq \mu_2
 <p>Para realizar el contraste, se tiene</p>
 <ul>
 <li><span class="math inline">\(\bar{X}_1 = \frac{4+\cdots +3}{10}=5.3\)</span> puntos y <span class="math inline">\(\bar{X}_2=\frac{8+\cdots +7}{12}=6.75\)</span> puntos.</li>
-<li><span class="math inline">\(S_1^2= \frac{(4^2+\cdots + 3^2}{10}-5.3^2=3.21\)</span> puntos<span class="math inline">\(^2\)</span> y <span class="math inline">\(S_2^2= \frac{8^2+\cdots +3^2}{12}-6.75^2=2.69\)</span> puntos<span class="math inline">\(^2\)</span>.</li>
+<li><span class="math inline">\(S_1^2= \frac{4^2+\cdots + 3^2}{10}-5.3^2=3.21\)</span> puntos<span class="math inline">\(^2\)</span> y <span class="math inline">\(S_2^2= \frac{8^2+\cdots +3^2}{12}-6.75^2=2.69\)</span> puntos<span class="math inline">\(^2\)</span>.</li>
 <li><span class="math inline">\(\hat{S}_p^2 = \frac{10\cdot 3.21+12\cdot 2.6875}{10+12-2}= 3.2175\)</span> puntos<span class="math inline">\(^2\)</span>, y <span class="math inline">\(\hat S_p=1.7937\)</span>.</li>
 </ul>
 <p>Si se suponen varianzas iguales, el estadístico del contraste vale</p>
@@ -1171,7 +1178,7 @@ F= \frac{\frac{\frac{(n_1-1)\hat{S}_1^2}{\sigma_1^2}}{n_1-1}}{\frac{\frac{(n_2-1
 <section id="section-2" class="slide level3 scrollable">
 <h3></h3>
 <div id="exm-contraste-comparacion-varianzas" class="theorem example">
-<p><span class="theorem-title"><strong>Ejemplo 16 </strong></span>Siguiendo con el ejemplo de las puntuaciones en dos grupos:</p>
+<p><span class="theorem-title"><strong>Ejemplo 16</strong></span> Siguiendo con el ejemplo de las puntuaciones en dos grupos:</p>
 <p><span class="math display">\[
 \begin{aligned}
 X_1 &amp;: 4 - 6 - 8 - 7 - 7 - 6 - 5 - 2 - 5 - 3 \newline
@@ -1217,7 +1224,8 @@ H_0: p_1=p_2\qquad H_1: p_1\neq p_2
 </section>
 <section class="slide level3">
 
-<p>:::{#exm-contraste-diferencia-proporciones} Se quiere comparar los porcentajes de aprobados en dos grupos que han seguido metodologías distintas. En el primer grupo han aprobado 24 alumnos de un total de 40, mientras que en el segundo han aprobado 48 de 60.</p>
+<div id="exm-contraste-diferencia-proporciones" class="theorem example">
+<p><span class="theorem-title"><strong>Ejemplo 17</strong></span> Se quiere comparar los porcentajes de aprobados en dos grupos que han seguido metodologías distintas. En el primer grupo han aprobado 24 alumnos de un total de 40, mientras que en el segundo han aprobado 48 de 60.</p>
 <p>El contraste que se plantea es</p>
 <p><span class="math display">\[
 H_0: p_1=p_2\qquad H_1: p_1\neq p_2
@@ -1227,6 +1235,7 @@ H_0: p_1=p_2\qquad H_1: p_1\neq p_2
 Z = \frac{\hat{p}_1-\hat{p_2}}{\sqrt{\frac{p_1(1-p_1)}{n_1}+\frac{p_2(1-p_2)}{n_2}}} = \frac{0.6-0.8}{\sqrt{\frac{0.6(1-0.6)}{40}+\frac{0.8(1-0.8)}{60}}} = -2.1483,
 \]</span></p>
 <p>y el <span class="math inline">\(p\)</span>-valor del contraste es <span class="math inline">\(2P(Z\leq -2.1483)= 0.0317\)</span>, de manera que se rechaza la hipótesis nula para <span class="math inline">\(\alpha=0.05\)</span> y se concluye que hay diferencias.</p>
+</div>
 </section></section>
 <section>
 <section id="realización-de-contrastes-mediante-intervalos-de-confianza" class="title-slide slide level2 center">
@@ -1275,7 +1284,7 @@ H_0: \theta=\theta_0\qquad H_1: \theta\neq \theta_0
 <section class="slide level3">
 
 <div id="exm-contraste-mediante-intervalos-confianza" class="theorem example">
-<p><span class="theorem-title"><strong>Ejemplo 17 </strong></span>Volviendo al contraste para comparar el rendimiento académico de dos grupos de alumnos que han obtenido las siguientes puntuaciones:</p>
+<p><span class="theorem-title"><strong>Ejemplo 18</strong></span> Volviendo al contraste para comparar el rendimiento académico de dos grupos de alumnos que han obtenido las siguientes puntuaciones:</p>
 <p><span class="math display">\[
 \begin{aligned}
 X_1 &amp;: 4 - 6 - 8 - 7 - 7 - 6 - 5 - 2 - 5 - 3 \newline
@@ -1289,9 +1298,11 @@ H_0: \mu_1=\mu_2\qquad H_1: \mu_1\neq \mu_2
 <p>Como se trata de un contraste bilateral, el intervalo de confianza para la diferencia de medias <span class="math inline">\(\mu_1-\mu_2\)</span> con nivel de confianza <span class="math inline">\(1-\alpha=0.95\)</span>, suponiendo varianzas iguales, vale <span class="math inline">\([-3.0521, 0.1521]\)</span> puntos. Y como según la hipótesis nula <span class="math inline">\(\mu_1-\mu_2=0\)</span>, y el 0 cae dentro del intervalo, se acepta la hipótesis nula.</p>
 <p>La ventaja del intervalo es que, además de permitirnos realizar el contraste, nos da una idea de la magnitud de la diferencia entre las medias de los grupos.</p>
 </div>
-
-<img src="img/logos/sticker.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<div class="quarto-auto-generated-content">
+<p><img src="img/logos/sticker.png" class="slide-logo"></p>
+<div class="footer footer-default">
 <p><a href="https://aprendeconalf.es/analisis-manual" class="uri">https://aprendeconalf.es/analisis-manual</a></p>
+</div>
 </div>
 </section></section>
     </div>
@@ -1321,7 +1332,6 @@ H_0: \mu_1=\mu_2\qquad H_1: \mu_1\neq \mu_2
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -1621,10 +1631,9 @@ H_0: \mu_1=\mu_2\qquad H_1: \mu_1\neq \mu_2
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn) {
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1634,8 +1643,17 @@ H_0: \mu_1=\mu_2\qquad H_1: \mu_1\neq \mu_2
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
